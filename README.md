@@ -118,7 +118,7 @@ Below is a sample result from the **Adaptive Reach-and-Grasp demo**.
 
 <div style="text-align:center">
   <video src="https://github.com/user-attachments/assets/b41e7a88-4320-4985-9545-cab90c7c8357" width="80%" controls="true"></video>
-</div><br>
+</div>
 
 #### Downloading Your Own Output
 
