@@ -5,11 +5,10 @@ A **Physical AI sandbox** that integrates [OpenPI](https://github.com/Physical-I
 
 This project provides a full reproducible environment for running **Vision-Language-Action (VLA)** models in simulation on GPU-enabled cloud infrastructure.
 
-**NOTE:** This setup is intended for **research and sandbox experiments**. For production or shared environments:
-
-* Assign **minimal IAM scopes** to the service account
-* Restrict inbound access via **VPC firewall rules**
-* Use **preemptible instances** for cost-efficient workloads
+> **NOTE:** This setup is intended for **research and sandbox experiments**. For production or shared environments:
+> * Assign **minimal IAM scopes** to the service account
+> * Restrict inbound access via **VPC firewall rules**
+> * Use **preemptible instances** for cost-efficient workloads
 
 
 ## Overview
@@ -109,6 +108,17 @@ This will generate:
 
 containing the simulated robot performing **adaptive reach-and-grasp** with visual feedback.
 
+#### Sample Output Video
+
+Below is a sample result from the **Adaptive Reach-and-Grasp demo**.
+
+> **Note:** This particular run is a *failure case* —  
+> the policy approaches the object but fails to successfully grasp it.  
+> It's still valuable to observe how the VLA policy plans and executes motion under this setup.
+
+<div align="center">
+<video src="https://github.com/hyorimitsu/physical-ai-sandbox/raw/main/docs/02_libero_openpi_adaptive_reach_demo.mp4" controls width="80%"></video>
+</div>
 
 ## Configuration
 
@@ -184,7 +194,7 @@ terraform apply -var="project_id=your-google-cloud-project-id"
 | GPU          | 1× NVIDIA L4                          |
 | Region       | `asia-northeast1`                     |
 | OS           | Ubuntu 24.04 LTS                      |
-| Disk         | 100GB balanced persistent disk       |
+| Disk         | 100GB balanced persistent disk        |
 
 ### Connect and Initialize
 
