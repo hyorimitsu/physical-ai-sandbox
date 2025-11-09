@@ -200,10 +200,10 @@ terraform apply -var="project_id=your-google-cloud-project-id"
 
 ```bash
 # SSH into the deployed instance
-gcloud compute ssh physical_ai --zone=asia-northeast1-a
+gcloud compute ssh physical-ai --zone=asia-northeast1-a
 
 # Clone repository and begin setup
-git clone git@github.com:hyorimitsu/physical-ai-sandbox.git
+git clone https://github.com/hyorimitsu/physical-ai-sandbox.git
 cd physical-ai-sandbox
 ./scripts/01_install_nvidia.sh
 # ...continue with setup steps
