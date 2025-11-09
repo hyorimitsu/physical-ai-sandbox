@@ -120,6 +120,19 @@ Below is a sample result from the **Adaptive Reach-and-Grasp demo**.
 <video src="https://github.com/hyorimitsu/physical-ai-sandbox/raw/main/docs/02_libero_openpi_adaptive_reach_demo.mp4" controls width="80%"></video>
 </div>
 
+#### Downloading Your Own Output
+
+If you run the demo on a Google Cloud VM, you can copy the generated video back to your local machine using `gcloud compute scp`:
+
+```bash
+gcloud compute scp --zone=asia-northeast1-a \
+  physical-ai:/path/to/physical-ai-sandbox/02_libero_openpi_adaptive_reach_demo.mp4 \
+  ./02_libero_openpi_adaptive_reach_demo.mp4
+```
+
+This command downloads the recorded MP4 file from the VM instance (`physical-ai`) to your current local directory.
+
+
 ## Configuration
 
 The demo supports detailed tuning through environment variables.
